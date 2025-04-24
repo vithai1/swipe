@@ -36,11 +36,13 @@
 .minusIcon {
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .exitIcon {
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .verticalWrapper {
