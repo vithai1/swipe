@@ -36,11 +36,13 @@ export const DetailContainer: React.FC<CardProps> = ({
             )}
           </div>
 
-          <div className={styles.horizontalContainer2}>
+          <div className={styles.contentContainer}>
             <div className={styles.content}>
-              <div className={styles.rewardValue}>{rewardValue}</div>
-              <div className={styles.textWrapper3}>{rewardType}</div>
-              <div className={styles.textWrapper3}>{cardName}</div>
+              <div className={styles.rewardValue}>
+                <div className={styles.text}>{rewardValue}</div>
+              </div>
+              <div className={styles.textWrapper}>{rewardType}</div>
+              <div className={styles.textWrapper}>{cardName}</div>
             </div>
             <div className={styles.iconWrapper}>
               <img className={styles.caretRight} alt="Caret right" src={caretSrc} />
@@ -56,10 +58,12 @@ export const DetailContainer: React.FC<CardProps> = ({
       </div>
 
       <div className={styles.cardDetails}>
-        <p className={"text" /* still global if needed */}>
-          <span>Extended warranty, Purchase protection, return protection </span>
-          <span className={styles.textWrapper4}>read more </span>
-          <span>&gt;</span>
+        <p className={styles.detailsText}>
+          <span className={styles.detailsSpan}>
+            Extended warranty, Purchase protection, return protection{" "}
+          </span>
+          <span className={styles.readMore}>read more </span>
+          <span className={styles.detailsSpan}>&gt;</span>
         </p>
       </div>
 
@@ -67,15 +71,18 @@ export const DetailContainer: React.FC<CardProps> = ({
         {isOurPick && (
           <div className={styles.tag}>
             <img className={styles.medal} alt="Medal" src={medal} />
-            <div>Our Pick</div>
+            <div className={styles.tagText}>Our Pick</div>
           </div>
         )}
         {tags.map((tag, index) => (
           <div key={index} className={styles[`tag${index + 2}`]}>
-            <div>{tag}</div>
+            <div className={styles.tagText}>{tag}</div>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
+
+

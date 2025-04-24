@@ -2,11 +2,12 @@
   border: 1px solid #2626261a;
   border-radius: 12px;
   box-shadow: 0px 4px 8px #2e77f440;
-  padding: 32px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 100%;
+  gap: 16px;
+  width: auto;
+  background-color: #ffffff;
 }
 
 .cardInfo {
@@ -33,6 +34,7 @@
   width: 89px;
   height: 57px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .checkCircle {
@@ -43,30 +45,42 @@
   height: 24px;
 }
 
-.horizontalContainer2 {
+.contentContainer {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  align-items: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  flex-grow: 1;
+  gap: 4px;
+  max-width: 200px;
 }
 
 .rewardValue {
   font-family: "DM Sans-Bold", Helvetica;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #000;
+  word-break: break-word;
 }
 
-.textWrapper3 {
+.text {
+  font-family: "DM Sans-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  word-break: break-word;
+}
+
+.textWrapper {
   font-family: "Inter-Regular", Helvetica;
   font-size: 12px;
   color: #000;
+  line-height: 1.2;
+  word-break: break-word;
 }
 
 .iconWrapper {
@@ -112,19 +126,33 @@
   width: 285px;
 }
 
-.cardDetails .text {
-  opacity: 0.5;
-  font-size: 12px;
-  font-family: "Inter-Regular", Helvetica;
+.cardDetails {
+  margin-top: 8px;
 }
 
-.textWrapper4 {
+.detailsText {
+  font-size: 12px;
+  font-family: "Inter-Regular", Helvetica;
+  color: #666666;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.detailsSpan {
+  opacity: 0.7;
+}
+
+.readMore {
   text-decoration: underline;
+  color: #2e77f4;
+  cursor: pointer;
 }
 
 .cardTags {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .tag,
@@ -137,6 +165,11 @@
   border-radius: 4px;
   font-size: 10px;
   font-family: "DM Sans-Light", Helvetica;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .tag {
@@ -163,4 +196,10 @@
 .medal {
   width: 10px;
   height: 10px;
+}
+
+.tagText {
+  font-family: "DM Sans-Light", Helvetica;
+  font-size: 10px;
+  color: #333333;
 }
