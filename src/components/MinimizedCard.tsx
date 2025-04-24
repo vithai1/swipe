@@ -6,7 +6,7 @@ import wellsfargo from "../assets/wellsfargo.png";
 import bilt from "../assets/bilt.png";
 import alaska from "../assets/alaska.png";
 import sapphireR from "../assets/sapphireR.png";
-import { FaCreditCard } from "react-icons/fa6";
+import logo from "../assets/logo.svg";
 import "../styles/MinimizedCard.css";
 
 export const MinimizedCard: React.FC = () => {
@@ -53,7 +53,7 @@ export const MinimizedCard: React.FC = () => {
         </div>
 
         <button className="button">
-          <FaCreditCard className="logo" />
+          <img src={logo} className="logo" />
           <div className="button-text-2">pay with selected card</div>
         </button>
       </div>
