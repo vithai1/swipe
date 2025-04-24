@@ -9,7 +9,7 @@ import sapphireR from "../assets/sapphireR.png";
 import logo from "../assets/logo.svg";
 import styles from "../styles/MinimizedCard.module.css";
 
-export const MinimizedCard: React.FC = () => {
+export const MinimizedCard: React.FC<{ onExpand: () => void }> = ({ onExpand }) => {
   return (
     <div className={styles.minimizedCard}>
       <div className={styles.cardContainer}>
@@ -45,10 +45,10 @@ export const MinimizedCard: React.FC = () => {
               </div>
             </div>
 
-            <div className={styles.buttonContainer}>
+            <button className={styles.buttonContainer} onClick={onExpand}>
               <div className={styles.buttonText}>see all cards</div>
               <RxCaretRight className={styles.caretRight} />
-            </div>
+            </button>
           </div>
         </div>
 

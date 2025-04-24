@@ -91,7 +91,7 @@
 
 .cardReward {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -155,10 +155,12 @@
 }
 
 .buttonContainer {
-  display: inline-flex;
+  all: unset;
+  display: flex;
+  align-items: center;
   gap: 4px;
-  align-items: flex-end;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .buttonText {

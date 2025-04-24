@@ -1,0 +1,166 @@
+.detailsContainer {
+  border: 1px solid #2626261a;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px #2e77f440;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.horizontalContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 57px;
+}
+
+.cardImageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 89.25px;
+  position: relative;
+}
+
+.cardImage {
+  width: 89px;
+  height: 57px;
+  object-fit: cover;
+}
+
+.checkCircle {
+  position: absolute;
+  top: -9px;
+  left: 75px;
+  width: 24px;
+  height: 24px;
+}
+
+.horizontalContainer2 {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.rewardValue {
+  font-family: "DM Sans-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.textWrapper3 {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  color: #000;
+}
+
+.iconWrapper {
+  padding: 8px;
+  border-radius: 24px;
+  display: inline-flex;
+}
+
+.caretRight {
+  width: 16px;
+  height: 16px;
+}
+
+.spendBar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.totalBar {
+  height: 6px;
+  background-color: #eaeaea;
+  border-radius: 100px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.fillBar,
+.fillBar2,
+.fillBar3 {
+  background-color: #9fa4ae;
+  border-radius: 100px;
+  height: 100%;
+}
+
+.fillBar {
+  width: 145px;
+}
+.fillBar2 {
+  width: 227px;
+}
+.fillBar3 {
+  width: 285px;
+}
+
+.cardDetails .text {
+  opacity: 0.5;
+  font-size: 12px;
+  font-family: "Inter-Regular", Helvetica;
+}
+
+.textWrapper4 {
+  text-decoration: underline;
+}
+
+.cardTags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag,
+.tag2,
+.tag3,
+.tag4,
+.tag5 {
+  padding: 4px 8px;
+  border: 0.5px solid;
+  border-radius: 4px;
+  font-size: 10px;
+  font-family: "DM Sans-Light", Helvetica;
+}
+
+.tag {
+  background-color: #f3f1fe;
+  border-color: #8b8cc0;
+}
+.tag2 {
+  background-color: #f5fef1;
+  border-color: #99c08b;
+}
+.tag3 {
+  background-color: #fef7f1;
+  border-color: #c0a48b;
+}
+.tag4 {
+  background-color: #fef1f6;
+  border-color: #c08b97;
+}
+.tag5 {
+  background-color: #f1fafe;
+  border-color: #8ba7c0;
+}
+
+.medal {
+  width: 10px;
+  height: 10px;
+}
