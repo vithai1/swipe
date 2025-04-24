@@ -1,0 +1,208 @@
+.minimizedCard {
+  align-items: flex-end;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  box-shadow: 0px 2px 24px #0000001a;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  width: 352px;
+}
+
+.cardContainer {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.content {
+  border-bottom: 1px solid #68686826;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 8px;
+  width: 100%;
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+.horizontalContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 57px;
+  width: 100%;
+}
+
+.cardImageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 89.25px;
+  position: relative;
+}
+
+.cardImage {
+  width: 89px;
+  height: 57px;
+  object-fit: cover;
+}
+
+.checkCircleWrapper {
+  background-color: #2e77f4;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkIcon {
+  color: white;
+  font-size: 16px;
+}
+
+.cardDetails {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.cardReward {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.textWrapper {
+  color: #000000;
+  font-family: "DM Sans-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.div {
+  color: #000000;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cardName {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.horizontalContainer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.div2 {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.img {
+  width: 25px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.additionalCards {
+  display: inline-flex;
+  gap: 10px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  border-radius: 100px;
+}
+
+.numberOfAdditional {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.5;
+  white-space: nowrap;
+}
+
+.buttonContainer {
+  display: inline-flex;
+  gap: 4px;
+  align-items: flex-end;
+  opacity: 0.5;
+}
+
+.buttonText {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.caretRight {
+  width: 10px;
+  height: 15px;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+  cursor: pointer;
+  font: inherit;
+}
+
+.logo {
+  width: 23px;
+  height: 16px;
+}
+
+.buttonText2 {
+  color: #ffffff;
+  font-family: "DM Sans-SemiBold", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.exitIcon {
+  position: absolute;
+  top: 12px;
+  left: 340px;
+  border-radius: 100px;
+}

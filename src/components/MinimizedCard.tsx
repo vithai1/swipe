@@ -7,57 +7,57 @@ import bilt from "../assets/bilt.png";
 import alaska from "../assets/alaska.png";
 import sapphireR from "../assets/sapphireR.png";
 import logo from "../assets/logo.svg";
-import "../styles/MinimizedCard.css";
+import styles from "../styles/MinimizedCard.module.css";
 
 export const MinimizedCard: React.FC = () => {
   return (
-    <div className="MinimizedCard">
-      <div className="card-container">
-        <div className="content">
-          <div className="horizontal-container">
-            <div className="card-image-container">
-              <img className="card-image" alt="Card" src={wellsfargo} />
-              <div className="check-circle-wrapper">
-                <MdCheck className="check-icon" />
+    <div className={styles.minimizedCard}>
+      <div className={styles.cardContainer}>
+        <div className={styles.content}>
+          <div className={styles.horizontalContainer}>
+            <div className={styles.cardImageContainer}>
+              <img className={styles.cardImage} alt="Card" src={wellsfargo} />
+              <div className={styles.checkCircleWrapper}>
+                <MdCheck className={styles.checkIcon} />
               </div>
             </div>
 
-            <div className="card-details">
-              <div className="card-content">
-                <div className="card-reward">
-                  <div className="text-wrapper">$2.71</div>
-                  <div className="div">cash back</div>
+            <div className={styles.cardDetails}>
+              <div className={styles.cardContent}>
+                <div className={styles.cardReward}>
+                  <div className={styles.textWrapper}>$2.71</div>
+                  <div className={styles.div}>cash back</div>
                 </div>
-                <div className="card-name">Wells Fargo Active Cash</div>
+                <div className={styles.cardName}>Wells Fargo Active Cash</div>
               </div>
             </div>
           </div>
 
-          <div className="horizontal-container-2">
-            <div className="div-2">
-              <div className="div-2">
-                <img className="img" alt="Card" src={bilt} />
-                <img className="img" alt="Card" src={alaska} />
-                <img className="img" alt="Card" src={sapphireR} />
+          <div className={styles.horizontalContainer2}>
+            <div className={styles.div2}>
+              <div className={styles.div2}>
+                <img className={styles.img} alt="Card" src={bilt} />
+                <img className={styles.img} alt="Card" src={alaska} />
+                <img className={styles.img} alt="Card" src={sapphireR} />
               </div>
-              <div className="additional-cards">
-                <div className="number-of-additional">+5</div>
+              <div className={styles.additionalCards}>
+                <div className={styles.numberOfAdditional}>+5</div>
               </div>
             </div>
 
-            <div className="button-container">
-              <div className="button-text">see all cards</div>
-              <RxCaretRight className="caret-right" />
+            <div className={styles.buttonContainer}>
+              <div className={styles.buttonText}>see all cards</div>
+              <RxCaretRight className={styles.caretRight} />
             </div>
           </div>
         </div>
 
-        <button className="button">
-          <img src={logo} className="logo" />
-          <div className="button-text-2">pay with selected card</div>
+        <button className={styles.button}>
+          <img src={logo} className={styles.logo} />
+          <div className={styles.buttonText2}>pay with selected card</div>
         </button>
       </div>
-      <IoIosClose size={32} className="exit-icon" />
+      <IoIosClose size={32} className={styles.exitIcon} />
     </div>
   );
 };
