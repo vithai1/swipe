@@ -10,14 +10,14 @@ import exitIcon from "../assets/exitIcon.svg";
 import { DetailContainer } from "./DetailContainer";
 import styles from "../styles/ExpandedCard.module.css";
 
-export const ExpandedCard: React.FC = () => {
+export const ExpandedCard: React.FC<{ onMinimize: () => void }> = ({ onMinimize }) => {
   return (
     <div className={styles.maximizedPopUp}>
         <div className={styles.topBar}>
             <div className={styles.textWrapper}>Our Recommendations</div>
             <div className={styles.frame}>
-            <img src={minus} className={styles.minusIcon} />
-            <img src={exitIcon} className={styles.exitIcon} />
+                <img src={minus} className={styles.minusIcon} onClick={onMinimize} />
+                <img src={exitIcon} className={styles.exitIcon} onClick={() => window.close()} />
             </div>
         </div>
 
@@ -51,20 +51,14 @@ export const ExpandedCard: React.FC = () => {
             fillBarClass="fillBar3"
             tags={["Best travel rewards"]}
             />
-
-            <button className={styles.button}>
-            <div className={styles.buttonText}>add new card</div>
-            </button>
         </div>
 
         <div className={styles.buttonContainer}>
-            <button className={styles.button2}>
+            <button className={styles.payButton}>
             <img className={styles.logo} alt="Logo" src={logo} />
-            <div className={styles.buttonText2}>pay with selected card</div>
+            <div className={styles.payButtonText}>pay with selected card</div>
             </button>
         </div>
-
-        <div className={styles.opacityEffect} />
-        </div>
+    </div>
   );
 };

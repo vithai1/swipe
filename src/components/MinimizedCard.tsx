@@ -57,7 +57,7 @@ export const MinimizedCard: React.FC<{ onExpand: () => void }> = ({ onExpand }) 
           <div className={styles.buttonText2}>pay with selected card</div>
         </button>
       </div>
-      <IoIosClose size={32} className={styles.exitIcon} />
+      <IoIosClose size={32} className={styles.exitIcon} onClick={() => window.close()} />
     </div>
   );
 };
