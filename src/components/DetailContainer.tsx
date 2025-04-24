@@ -57,15 +57,13 @@ export const DetailContainer: React.FC<CardProps> = ({
         </div>
       </div>
 
-      <div className={styles.cardDetails}>
-        <p className={styles.detailsText}>
-          <span className={styles.detailsSpan}>
-            Extended warranty, Purchase protection, return protection{" "}
-          </span>
-          <span className={styles.readMore}>read more </span>
-          <span className={styles.detailsSpan}>&gt;</span>
-        </p>
-      </div>
+      <p className={styles.detailsText}>
+        <span className={styles.detailsSpan}>
+          Extended warranty, Purchase protection, return protection{" "}
+        </span>
+        <span className={styles.readMore}>read more </span>
+        <span className={styles.detailsSpan}>&gt;</span>
+      </p>
 
       <div className={styles.cardTags}>
         {isOurPick && (

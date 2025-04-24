@@ -2,7 +2,7 @@
   border: 1px solid #2626261a;
   border-radius: 12px;
   box-shadow: 0px 4px 8px #2e77f440;
-  padding: 20px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -126,10 +126,6 @@
   width: 285px;
 }
 
-.cardDetails {
-  margin-top: 8px;
-}
-
 .detailsText {
   font-size: 12px;
   font-family: "Inter-Regular", Helvetica;
@@ -144,7 +140,7 @@
 
 .readMore {
   text-decoration: underline;
-  color: #2e77f4;
+  color:  #666666;
   cursor: pointer;
 }
 
